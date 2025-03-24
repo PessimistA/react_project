@@ -1,0 +1,88 @@
+@media (max-width: 1200px) {
+    .sign-inButton {
+      padding: 10px 50px; /* Orantılı olarak daha küçük padding */
+      width: 25vw; /* Genişliği artırdık */
+    }
+    
+    .startLabel {
+      padding: 10px 60px; /* Orantılı olarak daha küçük padding */
+      width: 35vw; /* Genişliği artırdık */
+    }
+  
+    .sign-upButton {
+      padding: 10px 50px; /* Orantılı olarak daha küçük padding */
+      width: 22vw; /* Genişliği artırdık */
+    }
+  }
+  
+  /* Ekran genişliği 992px ve daha küçük olduğunda */
+  @media (max-width: 992px) {
+    .sign-inButton {
+      padding: 8px 40px; /* Daha küçük padding */
+      width: 30vw; /* Genişlik artırıldı */
+    }
+    
+    .startLabel {
+      padding: 8px 50px; /* Daha küçük padding */
+      width: 40vw; /* Genişlik artırıldı */
+    }
+  
+    .sign-upButton {
+      padding: 8px 40px; /* Daha küçük padding */
+      width: 28vw; /* Genişlik artırıldı */
+    }
+  }
+  
+  /* Ekran genişliği 768px ve daha küçük olduğunda */
+  @media (max-width: 768px) {
+    .sign-inButton {
+      padding: 6px 30px; /* Daha küçük padding */
+      width: 40vw; /* Genişlik artırıldı */
+    }
+  
+    .startLabel {
+      padding: 6px 40px; /* Daha küçük padding */
+      width: 50vw; /* Genişlik artırıldı */
+    }
+  
+    .sign-upButton {
+      padding: 6px 30px; /* Daha küçük padding */
+      width: 35vw; /* Genişlik artırıldı */
+    }
+  }
+  
+  /* Ekran genişliği 576px ve daha küçük olduğunda */
+  @media (max-width: 576px) {
+    .sign-inButton {
+      padding: 5px 20px; /* En küçük padding */
+      width: 55vw; /* Genişlik arttı */
+    }
+  
+    .startLabel {
+      padding: 5px 30px; /* En küçük padding */
+      width: 60vw; /* Genişlik arttı */
+    }
+  
+    .sign-upButton {
+      padding: 5px 20px; /* En küçük padding */
+      width: 50vw; /* Genişlik arttı */
+    }
+  }
+  
+  /* Ekran genişliği 375px ve daha küçük olduğunda */
+  @media (max-width: 375px) {
+    .sign-inButton {
+      padding: 4px 15px; /* En küçük padding */
+      width: 65vw; /* Genişlik arttı */
+    }
+  
+    .startLabel {
+      padding: 4px 25px; /* En küçük padding */
+      width: 70vw; /* Genişlik arttı */
+    }
+  
+    .sign-upButton {
+      padding: 4px 15px; /* En küçük padding */
+      width: 60vw; /* Genişlik arttı */
+    }
+  }
