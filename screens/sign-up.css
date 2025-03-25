@@ -1,5 +1,4 @@
-
-  .background-container1 {
+.background-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,16 +14,16 @@
   }
   .empty-box{
     position: fixed; /* Sabit pozisyon */
-    background: rgba(0, 0, 0,0.3);
+    background: rgba(0, 0, 0,0.2);
     color: black;
     font-size: 28px;
     border-radius: 5px;
-    border: 12px solid black;
+    border: 2px solid black;
     top: 50%; /* Y ekseninde tam ortada */
     left: 50%; /* X ekseninde tam ortada */
     transform: translate(-50%, -50%); /* Öğeyi tam olarak ortalar */
     padding: 0;
-    width: 38.5%;
+    width: 24%;
     height: 70%;
     display: flex;
     flex-direction: column; /* Dikey hizalama */
@@ -33,6 +32,12 @@
     box-sizing: border-box; 
     z-index: 10;  
 }
+@media (max-width: 960px) {/*ekranın yarısı*/
+    .empty-box {
+      width: 38%; /* Genişlik artırıldı */
+    }
+
+  }
 
   .button {
     margin-top: 20px;
@@ -55,12 +60,12 @@
     background-color: #c04e03; /* Buton üzerine gelince renk değişimi */
   }
   
-  .name-text, .password-text {
+  .name-text, .password-text,.Mail-text,.confirm-password-text {
     width: 100%;
     margin-bottom: 10px;
   }
   
-  .name-text input, .password-text input {
+  .name-text input,.Mail-text input, .password-text input,.confirm-password-text input {
     width: 100%; /* Genişlik %100 */
     padding: 10px; /* İç boşluk */
     font-size: 16px; /* Yazı boyutu */
@@ -68,7 +73,7 @@
     border-radius: 5px; /* Köşe yuvarlama */
   }
   
-  .name-label, .password-label {
+  .name-label,.mail-label ,.password-label,.confirm-password-label {
     width: 100%;
     text-align: left;
     font-size: 18px; /* Etiket yazı boyutu */

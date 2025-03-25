@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import myVideo from './assets/proje_resimler/background.mp4'; // Doğru dosya yolu
 import SignIn from "./screens/SignIn.js";  // SignIn bileşenini doğru şekilde içe aktar 
+import './screens/sign-in.css';
+import './screens/sign-up.css';
 import './App.css';
 import './screens/enterance.css'; 
 import SignUp from './screens/SignUp.js';
