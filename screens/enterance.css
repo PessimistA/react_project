@@ -22,9 +22,19 @@ body{
     object-fit: cover; /* Video ekranı tamamen kaplasın */
   }
   /* Butonların düzeni */
-  .sign-inButton, .startLabel, .sign-upButton {
+  .startLabel{
     position: absolute;
     background: transparent;
+    color: black;
+    font-size: 28px;
+    border-radius: 5px;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 10; 
+  }
+
+  .sign-inButton, .sign-upButton {
+    position: absolute;
     color: black;
     font-size: 28px;
     cursor: pointer;
@@ -37,44 +47,58 @@ body{
   
   /* Her butonun sabit boyutları */
   .sign-inButton {
+    position: absolute;
     top: 20%;
     left: 50%;
-    padding: 2.5% 5% ;
-    width: 25vw;  /* Yüzde biriminde genişlik */
+    padding: 0;
+    width: 25vw;
+    height: 7vh;
   
   }
   .startLabel {
     top: 20%;
     left: 15%;
     padding: 2.5% 8% ;
-    width: 40vw;
+    border: 2px solid black;
+    width: 20vw;
   }
   .sign-upButton {
+    position: absolute;
     top: 20%;
     left: 80%;
-    padding: 2.5% 5% ;
-    width: 20vw;
+    padding: 0; /* Padding kaldırıldı, genişlik ve yükseklik ile ayarlandı */
+    width: 25vw;
+    height: 7vh;
   
   }
   
   
-  .sign-upButton,.startLabel,.sign-inButton, textarea{
+  .startLabel textarea{
     border: solid black; 
     border-radius: 5px; 
     width: 150px;
   
   }
   
-  .sign-upButton,.sign-inButton, button{
+  .sign-upButton button, .sign-inButton button {
     background-color: rgba(110, 184, 227, 0.5);
     color: black;
-    border: solid black;
-    border-inline: black;
+    border: 2px solid black; /* Çerçeve kalınlığı artırıldı */
     font-size: 28px;
-    z-index: 10; 
-  
-  }
-  
+    cursor: pointer; /* Tıklanabilir olduğunu gösteren imleç */
+    width: 100%; /* Butonun tam olarak kapsayıcıyı doldurması */
+    height: 100%; /* Tüm alanı kaplaması */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px; /* Köşeleri yumuşatma */
+    z-index: 10;
+}
+
+.sign-upButton button:hover, .sign-inButton button:hover {
+  background-color: rgba(110, 184, 227, 0.8); /* Hover rengini biraz koyulaştırma */
+}
   
   
   
